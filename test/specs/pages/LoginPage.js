@@ -1,3 +1,5 @@
+import { homePage } from "./HomePage";
+
 class LoginPage {
 
     get inputEmail() {
@@ -22,7 +24,7 @@ class LoginPage {
         this.inputEmail.setValue(user)
         this.inputPassword.setValue(password)
         this.buttonSignIn.click()
-        // this.welcomeMessage.waitForExist()
+        homePage.welcomeMessage.waitForExist()
     }
 }
 
