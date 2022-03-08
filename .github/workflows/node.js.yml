@@ -36,9 +36,12 @@ jobs:
           cd /Volumes/Anatha\ 1.0.14/
           pwd
           mv "Anatha.app" /Applications/
-          continue-on-error: true
           pwd
+        continue-on-error: true
+      - name: Open Anatha
+        run: |
           open -a Anatha
+        continue-on-error: true
           
       - run: mkdir <dmg_root>
       - run: hdiutil attach public/Anatha-1.0.14.dmg -mountpoint mydirectory
