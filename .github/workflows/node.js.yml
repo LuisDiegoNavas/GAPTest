@@ -34,7 +34,8 @@ jobs:
           pwd
           hdiutil attach Anatha-1.0.14.dmg
           cd /Volumes/Anatha\ 1.0.14/
-          mv "/AnaTha.app" /Applications/
+          pwd
+          mv "Anatha.app" /Applications/
           mdfind -name 'Anatha.app'
           open -a Anatha
           
