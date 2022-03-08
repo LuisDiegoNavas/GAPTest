@@ -26,6 +26,12 @@ jobs:
           url: "https://github.com/anathatech/wallet-release-test/releases/download/v1.0.14/Anatha-1.0.14.dmg"
           target: public/
           
+      - name: Run maven command
+        run: |
+          ls
+          pwd
+          cd Public
+          
       - run: mkdir <dmg_root>
       - run: hdiutil attach public/Anatha-1.0.14.dmg -mountpoint <dmg_root>
       - run: sudo installer -pkg <dmg_root>/Install.pkg -target LocalSystem
