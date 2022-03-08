@@ -33,12 +33,12 @@ jobs:
           cd Public
           pwd
           mkdir mydirectory
-          hdiutil attach Anatha-1.0.14.dmg -mountpoint <dmg_root>
+          hdiutil attach Anatha-1.0.14.dmg -mountpoint mydirectory
           sudo installer -pkg mydirectory/Install.pkg -target LocalSystem
           hdiutil detach mydirectory
           
       - run: mkdir <dmg_root>
-      - run: hdiutil attach public/Anatha-1.0.14.dmg -mountpoint <dmg_root>
+      - run: hdiutil attach public/Anatha-1.0.14.dmg -mountpoint mydirectory
       - run: sudo installer -pkg <dmg_root>/Install.pkg -target LocalSystem
       - run: hdiutil detach <dmg_root>
       
