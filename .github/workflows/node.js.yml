@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: suisei-cn/actions-download-file@v1
         name: Download a file
-      - run: wget  https://github.com/anathatech/wallet-release-test/releases/download/v1.0.14/Anatha-1.0.14.dmg -O path/to/save
+      - run: wget https://github.com/anathatech/wallet-release-test/releases/download/v1.0.14/Anatha-1.0.14.dmg -O path/to/save
       
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
