@@ -32,6 +32,11 @@ jobs:
           pwd
           cd Public
           pwd
+          hdiutil attach Anatha-1.0.14.dmg
+          cd /Volumes/Anatha-1.0.14/
+          sudo installer -pkg Anatha-1.0.14.pkg -target "/"
+          hditutil detach /Volumes/Anatha-1.0.14/
+          
           VOLUME=`hdiutil attach Anatha-1.0.14.dmg | grep Volumes | awk '{print $3}'`
           cp -rf Anatha-1.0.14/Anatha.app /Applications
           hdiutil detach $VOLUME
