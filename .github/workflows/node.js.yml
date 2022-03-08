@@ -32,7 +32,7 @@ jobs:
           pwd
           cd Public
           pwd
-          hdiutil Anatha-1.0.14.dmg
+          hdiutil attach Anatha-1.0.14.dmg
           cd /Volumes/Anatha-1.0.14/
           sudo installer -pkg Anatha-1.0.14.pkg -target "/"
           hdiutil detach /Volumes/Anatha-1.0.14/
