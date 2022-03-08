@@ -36,8 +36,9 @@ jobs:
           cd /Volumes/Anatha\ 1.0.14/
           pwd
           mv "Anatha.app" /Applications/
-          mdfind -name 'Anatha.app'
           open -a Anatha
+          
+          mdfind -name 'Anatha.app'
           
           sudo installer -pkg Anatha-1.0.14.pkg -target "/"
           hditutil detach /Volumes/Anatha-1.0.14/
