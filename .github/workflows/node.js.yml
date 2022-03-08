@@ -42,12 +42,6 @@ jobs:
         run: |
           sudo spctl --master-disable
           open -a Anatha
-        continue-on-error: true
-          
-      - run: mkdir <dmg_root>
-      - run: hdiutil attach public/Anatha-1.0.14.dmg -mountpoint mydirectory
-      - run: sudo installer -pkg <dmg_root>/Install.pkg -target LocalSystem
-      - run: hdiutil detach <dmg_root>
       
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
