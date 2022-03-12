@@ -41,6 +41,7 @@ jobs:
       - name: Open Anatha
         run: |
           sudo spctl --master-disable
+          open -n ./Anatha.app --args -AppCommandLineArg
           open -a Anatha
       
       - uses: actions/checkout@v2
