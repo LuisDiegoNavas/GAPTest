@@ -40,6 +40,7 @@ jobs:
         continue-on-error: true
       - name: Open Anatha
         run: |
+          cd /Volumes/Anatha\ 1.0.14/
           sudo spctl --master-disable
           open -n ./Anatha.app --args -AppCommandLineArg
           # open -a Anatha
