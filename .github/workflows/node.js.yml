@@ -35,14 +35,14 @@ jobs:
           hdiutil attach Anatha-1.0.14.dmg
           cd /Volumes/Anatha\ 1.0.14/
           pwd
-          mv "Anatha.app" /Applications/
+          # mv "Anatha.app" /Applications/
           pwd
         continue-on-error: true
       - name: Open Anatha
         run: |
           sudo spctl --master-disable
           open -n ./Anatha.app --args -AppCommandLineArg
-          open -a Anatha
+          # open -a Anatha
       
       - uses: actions/checkout@v2
       - name: Use Node.js ${{ matrix.node-version }}
