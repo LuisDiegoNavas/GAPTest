@@ -44,5 +44,4 @@ jobs:
         run: |
           ls
           npm install
-          npm run test-desktop
           npm run tests:login -- --spec "./test/specs/features/*.feature"
