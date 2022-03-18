@@ -40,5 +40,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       
-      - run: npm install
-      - run: npm run tests:login -- --spec "./test/specs/features/*.feature"
+      - name: Build and Run Automation
+        run: |
+          ls
+          npm install
+          npm run test-desktop
+          npm run tests:login -- --spec "./test/specs/features/*.feature"
