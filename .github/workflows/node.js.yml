@@ -15,8 +15,8 @@ jobs:
     runs-on: macos-latest
     
     env:
-      NODE_ENV: 'desktop'
-      TEST_ENVIRONMENT: 'desktop'
+      NODE_ENV: 'qa'
+      TEST_ENVIRONMENT: 'qa'
       BASE_URL: 'app://./index.html'
       PROJECT: 'nameproject'
       BROWSER: 'chrome'
