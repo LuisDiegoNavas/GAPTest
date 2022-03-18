@@ -1,4 +1,4 @@
-import { Given, When } from 'cucumber'
+import { Given, When } from '@cucumber/cucumber'
 import { loginPage } from '../pages/LoginPage'
 
 Given('The login page', () => {

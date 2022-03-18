@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import { Given, When, Then } from 'cucumber';
+import { Given, When, Then } from '@cucumber/cucumber';
 import { homePage } from '../pages/HomePage';
 
 Then('I validate icon is present home page', () => {
